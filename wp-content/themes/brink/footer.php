@@ -13,7 +13,7 @@
 	</div><!-- #content -->
 </div><!-- #page -->
 
-<div class="footer bg-secondary-color">
+<div class="footer bg-secondary-color m-0">
     <div class="container t-light-gray footer-wrap">
         <div class="group row">
             <div class="col-12 col-lg-9">
@@ -36,6 +36,7 @@
 
             <div class="col-12 col-lg-3">
                 <h5 class="caps t-white">Follow</h5>
+                <p>Author: David Kirby</p>
                 <ul class="social-icons">
                 	<?php get_social(); ?>
             	</ul>

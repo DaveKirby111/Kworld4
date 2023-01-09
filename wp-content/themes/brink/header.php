@@ -12,6 +12,7 @@
 $favicon = get_field('favicon', 'option');
 $apple_icon = get_field('apple_icon', 'option');
 ?>
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 
@@ -46,24 +47,33 @@ $apple_icon = get_field('apple_icon', 'option');
 			}
 		}
 
-		?>
+		?>	
+	
 
-		<header id="masthead" class="site-header <?php echo $header_classes; ?>">
+		<header id="masthead" class="site-header d-flex <?php echo $header_classes; ?>">
+
+		<?php 
+
+			if( function_exists('the_custom_logo')) {
+				the_custom_logo();
+			}
+
+			?>
+
 
 			<div class="container">
-				<div class="row">
-					<div class="col-12 col-lg-4 branding d-flex justify-content-between align-items-center">
+
+				<div class="row title">
+					<div class="col-12 col-lg-4 branding d-flex justify-content-between align-items-center title">
 						<a href="<?php echo home_url(); ?>" class="logo screen" aria-label="Return to site home link"><?php get_logo('default_logo'); ?></a>
 						<a href="<?php echo home_url(); ?>" class="logo print" aria-hidden="true"><?php get_logo('print_logo'); ?></a>
 						<a href="javascript:void(0);" class="mobile-trigger" aria-label="Mobile Menu Toggle"><i class="fa fa-bars" aria-hidden="true" title="Menu"></i></a>
 					</div>
-					<div class="col-12 col-lg-8">
-						<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'nav right pt-4 pt-lg-0', 'container' => 'ul')); ?>
-					</div>
+					
 				</div>
 			</div>
 
-			<div class="search-box">
+			<!-- <div class="search-box">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 search-form pb-4">
@@ -78,8 +88,14 @@ $apple_icon = get_field('apple_icon', 'option');
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 		</header><!-- #masthead -->
 
-		<div id="content" class="site-content">
+		<div class="main-nav">
+				<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav right pt-4 pt-lg-0', 'container' => 'ul')); ?>
+			</div>
+
+			
+
+		<div id="content" class="site-content main container-fluid d-flex min-vh-100">

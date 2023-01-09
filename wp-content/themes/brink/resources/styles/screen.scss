@@ -30,6 +30,7 @@ Text Domain: kin-brink
     09 - SUBPAGE STYLES
     10 - FOOTER STYLES
     11 - PLUGIN STYLES
+    12 - MY STYLES
 
     FONTS USED
     Main Copy: #{$copy-font-stack}
@@ -1348,3 +1349,91 @@ ul.sub-menu {
 
 /* 11 = PLUGIN STYLES
 ---------------------------------------------------------- */
+
+/* 12 = MY STYLES 
+----------------------------------------------------------*/
+
+// HEADER-------------------------------
+
+.site-header {
+
+    background-color: lightgray;
+    border-bottom: 1px solid gray;
+    padding: 40px;
+
+   .title {
+
+    margin-top: 5px;
+
+    p {
+        font-size: 40px;
+        color: black;
+    }
+
+   }
+}
+
+.title {
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    p {
+        width: 500px;
+    }
+}
+
+// NAV-------------------------------------
+
+.main-nav {
+    background-color: lightgray;
+    margin: 0;
+    height: 50px;
+    width: 100%;
+    border-bottom: 5px solid gray;
+}
+
+.nav {
+
+    li {
+
+        a {
+             color: black;
+             font-size: 15px;
+             
+             &:hover {
+                 background-color: black;
+                 color: rgb(2, 222, 2);
+                 text-shadow: 1px 1px 1px red;
+             }
+         }
+     
+        }
+}
+
+// CONTENT-------------------------------------
+
+.site-content {
+    background-color: #444;
+}
+
+// FOOTER---------------------------------------
+
+.footer {
+    background-color: lightgray;
+    border-top: 5px solid gray;
+
+    h5 {
+        color: black;
+    }
+
+    p {
+        color: black;
+    }
+   
+    a {
+        color: black;
+    }
+}
+

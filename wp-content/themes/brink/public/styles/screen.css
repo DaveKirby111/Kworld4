@@ -9300,6 +9300,7 @@ h3 {
     09 - SUBPAGE STYLES
     10 - FOOTER STYLES
     11 - PLUGIN STYLES
+    12 - MY STYLES
 
     FONTS USED
     Main Copy: Sarabun, sans-serif
@@ -10950,5 +10951,62 @@ ul.sub-menu li a {
 
 /* 11 = PLUGIN STYLES
 ---------------------------------------------------------- */
+/* 12 = MY STYLES 
+----------------------------------------------------------*/
+.site-header {
+  background-color: lightgray;
+  border-bottom: 1px solid gray;
+  padding: 40px;
+}
+.site-header .title {
+  margin-top: 5px;
+}
+.site-header .title p {
+  font-size: 40px;
+  color: black;
+}
+
+.title a:hover {
+  text-decoration: none;
+}
+.title p {
+  width: 500px;
+}
+
+.main-nav {
+  background-color: lightgray;
+  margin: 0;
+  height: 50px;
+  width: 100%;
+  border-bottom: 5px solid gray;
+}
+
+.nav li a {
+  color: black;
+  font-size: 15px;
+}
+.nav li a:hover {
+  background-color: black;
+  color: rgb(2, 222, 2);
+  text-shadow: 1px 1px 1px red;
+}
+
+.site-content {
+  background-color: #444;
+}
+
+.footer {
+  background-color: lightgray;
+  border-top: 5px solid gray;
+}
+.footer h5 {
+  color: black;
+}
+.footer p {
+  color: black;
+}
+.footer a {
+  color: black;
+}
 
 /*# sourceMappingURL=screen.css.map*/
