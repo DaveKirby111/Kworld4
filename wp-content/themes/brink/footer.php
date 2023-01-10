@@ -40,7 +40,6 @@
                 <ul class="social-icons">
                 	<?php get_social(); ?>
             	</ul>
-            	<p class="tiny">&copy; Copyright <?php echo date('Y') . ' - ' . get_field('company_name', 'option'); ?>. All Rights Reserved.</p>
             </div>
             
         </div>

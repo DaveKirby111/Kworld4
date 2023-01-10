@@ -48,9 +48,13 @@ $apple_icon = get_field('apple_icon', 'option');
 		}
 
 		?>	
+
+
 	
 
 		<header id="masthead" class="site-header d-flex <?php echo $header_classes; ?>">
+
+		<a href="javascript:void(0);" class="mobile-trigger" aria-label="Mobile Menu Toggle"><i class="fa fa-bars" aria-hidden="true" title="Menu"></i></a>
 
 		<?php 
 
@@ -64,36 +68,21 @@ $apple_icon = get_field('apple_icon', 'option');
 			<div class="container">
 
 				<div class="row title">
-					<div class="col-12 col-lg-4 branding d-flex justify-content-between align-items-center title">
+					<div class="mobile col-12 col-lg-4 branding d-flex justify-content-between align-items-center title">
 						<a href="<?php echo home_url(); ?>" class="logo screen" aria-label="Return to site home link"><?php get_logo('default_logo'); ?></a>
 						<a href="<?php echo home_url(); ?>" class="logo print" aria-hidden="true"><?php get_logo('print_logo'); ?></a>
-						<a href="javascript:void(0);" class="mobile-trigger" aria-label="Mobile Menu Toggle"><i class="fa fa-bars" aria-hidden="true" title="Menu"></i></a>
+						
 					</div>
 					
 				</div>
 			</div>
 
-			<!-- <div class="search-box">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 search-form pb-4">
-							<form method="get" action="<?php echo home_url(); ?>"
-							class="d-flex align-content-center">
-								<label for="s" class="screen-reader-text">Search Site</label>
-								<input type="search" placeholder="Search..." name="s" autocomplete="off" id="s" />
-								<label for="s-btn" class="screen-reader-text">Submit Search Button</label>
-								<input type="submit" class="button primary" value="Search" id="s-btn" />
-								<div class="clear"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div> -->
-
 		</header><!-- #masthead -->
 
 		<div class="main-nav">
 				<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav right pt-4 pt-lg-0', 'container' => 'ul')); ?>
+
+				<!-- <a href="javascript:void(0);" class="mobile-trigger" aria-label="Mobile Menu Toggle"><i class="fa fa-bars" aria-hidden="true" title="Menu"></i></a> -->
 			</div>
 
 			

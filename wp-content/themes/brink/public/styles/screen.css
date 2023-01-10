@@ -10953,6 +10953,10 @@ ul.sub-menu li a {
 ---------------------------------------------------------- */
 /* 12 = MY STYLES 
 ----------------------------------------------------------*/
+html, body {
+  overflow-x: hidden;
+}
+
 .site-header {
   background-color: lightgray;
   border-bottom: 1px solid gray;
@@ -10977,22 +10981,81 @@ ul.sub-menu li a {
   background-color: lightgray;
   margin: 0;
   height: 50px;
-  width: 100%;
   border-bottom: 5px solid gray;
 }
 
+.nav li {
+  border-left: 1px solid gray;
+}
 .nav li a {
   color: black;
   font-size: 15px;
 }
 .nav li a:hover {
   background-color: black;
-  color: rgb(2, 222, 2);
+  color: rgb(17, 234, 17);
   text-shadow: 1px 1px 1px red;
 }
 
 .site-content {
-  background-color: #444;
+  background-color: rgb(55, 50, 50);
+  display: flex;
+  flex-direction: column;
+}
+.site-content h1 {
+  color: rgb(7, 162, 7);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.site-content h2 {
+  color: rgb(7, 162, 7);
+  margin-bottom: 20px;
+}
+.site-content ul {
+  margin-bottom: 20px;
+  color: rgb(7, 162, 7);
+}
+.site-content p {
+  color: rgb(7, 162, 7);
+  margin-bottom: 20px;
+}
+
+.comment-respond {
+  margin-bottom: 20px;
+}
+.comment-respond h3 {
+  display: none;
+}
+.comment-respond .comment-form {
+  background-color: lightgray;
+  padding: 20px;
+  border: 5px double black;
+}
+.comment-respond .comment-form p {
+  color: black;
+}
+.comment-respond .comment-form .logged-in-as {
+  display: flex;
+  flex-direction: column;
+}
+.comment-respond .comment-form .submit {
+  padding: 10px;
+}
+
+article {
+  color: rgb(7, 162, 7);
+}
+article .wp-block-latest-comments__comment-link {
+  color: rgb(7, 162, 7);
+}
+
+.envira-gallery-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-content {
+  color: rgb(7, 162, 7);
 }
 
 .footer {
@@ -11007,6 +11070,10 @@ ul.sub-menu li a {
 }
 .footer a {
   color: black;
+}
+.footer a:hover {
+  color: red;
+  text-shadow: 1px 1px 1px green;
 }
 
 /*# sourceMappingURL=screen.css.map*/
