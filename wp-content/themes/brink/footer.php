@@ -20,7 +20,7 @@
                 <div class="footer-contact">
                    <?php echo get_field('address', 'option'); ?>
                     <p>
-                        <?php get_phone(); ?>
+                        <!-- <?php get_phone(); ?> -->
                         <br />
                         <?php if (get_field('email_address', 'option')): 
                             echo '<a href="mailto:'. get_field('email_address', 'option') .'">';

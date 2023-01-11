@@ -1296,10 +1296,6 @@ ul.sub-menu {
         color: $light-gray;
         @include transition(0.3s ease);
 
-        &:visited {
-            color: $light-gray;
-        }
-
         &:hover {
             color: $primary-color;
         }
@@ -1353,8 +1349,8 @@ ul.sub-menu {
 /* 12 = MY STYLES 
 ----------------------------------------------------------*/
 
-html,body{
-    overflow-x: hidden;
+body {
+    font-family: 'Aldrich', sans-serif;
 }
 
 // HEADER-------------------------------
@@ -1363,14 +1359,18 @@ html,body{
 
     background-color: lightgray;
     border-bottom: 1px solid gray;
-    padding: 40px;
+    padding: 30px;
 
    .title {
 
     margin-top: 5px;
 
+    text-shadow: 
+    1px 1px 1px red,
+    5px 5px 5px green;
+
     p {
-        font-size: 40px;
+        font-size: 50px;
         color: black;
     }
 
@@ -1382,10 +1382,6 @@ html,body{
     a:hover {
         text-decoration: none;
     }
-
-    p {
-        width: 500px;
-    }
 }
 
 // NAV-------------------------------------
@@ -1395,9 +1391,16 @@ html,body{
     margin: 0;
     height: 50px;
     border-bottom: 5px solid gray;
+
 }
 
 .nav {
+
+    @media screen and (max-width: 900px) {
+
+       margin-top: 15px;
+        
+    }
 
     li {
         border-left: 1px solid gray;
@@ -1414,6 +1417,10 @@ html,body{
          }
      
         }
+}
+
+.fa {
+    color: black;
 }
 
 // CONTENT-------------------------------------
@@ -1487,6 +1494,31 @@ article {
 
 .page-content {
     color: rgb(7, 162, 7);
+}
+
+#gform_wrapper_2 {
+    padding: 20px;
+    background-color: lightgray;
+    border: 5px double gray;
+    color: black;
+
+    h2 {
+        color: black;
+    }
+
+    #input_2_5 {
+        font-size: 20px;
+    }
+
+    .button {
+        background-color: gray;
+
+        &:hover {
+            background-color: black;
+            color: rgb(17, 234, 17);
+            text-shadow: 1px 1px 1px red;
+        }
+    }
 }
 
 // FOOTER---------------------------------------

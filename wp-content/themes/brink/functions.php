@@ -153,6 +153,7 @@ add_action('widgets_init', 'kin_widgets_init');
  */
 function kin_scripts()
 {
+	
 	// Set from child theme functions files
 	$version = _KIN_VERSION;
 	wp_enqueue_style('kin-style', get_stylesheet_uri());

@@ -23,6 +23,9 @@ $apple_icon = get_field('apple_icon', 'option');
 	<link rel="apple-touch-icon" sizes="180x180" href="<?= ($apple_icon ? image_arr_to_url($apple_icon) : '/favicons/apple-touch-icon.png') ?>">
 	<link rel="icon" type="image/png" sizes="32x32" href="<?= ($favicon ? image_arr_to_url($favicon) : '/favicons/apple-touch-icon.png') ?>">
 
+	<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=aldrich:400" rel="stylesheet" />
+
 	<?php wp_head(); ?>
 </head>
 
@@ -50,11 +53,7 @@ $apple_icon = get_field('apple_icon', 'option');
 		?>	
 
 
-	
-
 		<header id="masthead" class="site-header d-flex <?php echo $header_classes; ?>">
-
-		<a href="javascript:void(0);" class="mobile-trigger" aria-label="Mobile Menu Toggle"><i class="fa fa-bars" aria-hidden="true" title="Menu"></i></a>
 
 		<?php 
 
@@ -71,6 +70,8 @@ $apple_icon = get_field('apple_icon', 'option');
 					<div class="mobile col-12 col-lg-4 branding d-flex justify-content-between align-items-center title">
 						<a href="<?php echo home_url(); ?>" class="logo screen" aria-label="Return to site home link"><?php get_logo('default_logo'); ?></a>
 						<a href="<?php echo home_url(); ?>" class="logo print" aria-hidden="true"><?php get_logo('print_logo'); ?></a>
+
+						<a href="javascript:void(0);" class="mobile-trigger" aria-label="Mobile Menu Toggle"><i class="fa fa-bars" aria-hidden="true" title="Menu"></i></a>
 						
 					</div>
 					
@@ -81,8 +82,6 @@ $apple_icon = get_field('apple_icon', 'option');
 
 		<div class="main-nav">
 				<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav right pt-4 pt-lg-0', 'container' => 'ul')); ?>
-
-				<!-- <a href="javascript:void(0);" class="mobile-trigger" aria-label="Mobile Menu Toggle"><i class="fa fa-bars" aria-hidden="true" title="Menu"></i></a> -->
 			</div>
 
 			
